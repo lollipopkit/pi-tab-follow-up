@@ -3,7 +3,7 @@
 [English](./README.md) | 中文
 
 ```bash
-pi install https://github.com/lollipopkit/pi-tab-follow-up
+pi install npm:pi-tab-follow-up
 ```
 
 这个 pi package 会修改主输入编辑器里的 `Tab` 行为：

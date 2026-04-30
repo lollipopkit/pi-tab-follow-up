@@ -1,8 +1,12 @@
 {
 	"name": "pi-tab-follow-up",
-	"private": true,
-	"version": "0.70.6",
+	"version": "0.1.0",
 	"type": "module",
+	"files": [
+		"index.ts",
+		"README.md",
+		"README.zh.md"
+	],
 	"scripts": {
 		"clean": "echo 'nothing to clean'",
 		"build": "echo 'nothing to build'",
