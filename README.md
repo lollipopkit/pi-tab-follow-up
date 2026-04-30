@@ -21,7 +21,7 @@ Use direct keybinding configuration if you want a simple global remap. Use this 
 Run locally:
 
 ```bash
-pi -e ./packages/coding-agent/examples/extensions/tab-follow-up
+pi install https://github.com/lollipopkit/pi-tab-follow-up
 ```
 
 ## Disable Alt+Enter Follow-Up
