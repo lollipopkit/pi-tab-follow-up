@@ -1,6 +1,10 @@
 # Tab Follow-Up Extension
 
-[English](./README.md) | [中文](./README.zh.md)
+English | [中文](./README.zh.md)
+
+```bash
+pi install https://github.com/lollipopkit/pi-tab-follow-up
+```
 
 This pi package changes `Tab` in the main input editor:
 
@@ -15,14 +19,6 @@ This extension is conditional. It checks the current editor state first:
 
 - At the end of the main input: `Tab` sends the current input as a follow-up message.
 - Anywhere else, or while autocomplete is open: `Tab` is passed through to the normal editor behavior.
-
-Use direct keybinding configuration if you want a simple global remap. Use this extension if you want end-of-input follow-up while keeping `Tab` autocomplete.
-
-Run locally:
-
-```bash
-pi install https://github.com/lollipopkit/pi-tab-follow-up
-```
 
 ## Disable Alt+Enter Follow-Up
 

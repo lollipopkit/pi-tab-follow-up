@@ -1,6 +1,10 @@
 # Tab Follow-Up Extension
 
-[English](./README.md) | [中文](./README.zh.md)
+[English](./README.md) | 中文
+
+```bash
+pi install https://github.com/lollipopkit/pi-tab-follow-up
+```
 
 这个 pi package 会修改主输入编辑器里的 `Tab` 行为：
 
@@ -15,14 +19,6 @@
 
 - 光标位于主输入末尾：`Tab` 发送当前输入作为 follow-up 消息。
 - 光标不在末尾，或 autocomplete 已打开：`Tab` 继续交给默认编辑器处理。
-
-如果只需要简单的全局快捷键重映射，使用 keybinding 配置即可。如果希望在输入末尾用 `Tab` follow-up，同时保留 `Tab` autocomplete，请使用这个扩展。
-
-本地运行：
-
-```bash
-pi install https://github.com/lollipopkit/pi-tab-follow-up
-```
 
 ## 取消 Alt+Enter Follow-Up
 

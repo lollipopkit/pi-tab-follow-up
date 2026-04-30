@@ -23,7 +23,11 @@ class TabFollowUpEditor extends CustomEditor {
 	}
 
 	handleInput(data: string): void {
-		if (matchesKey(data, "tab") && !this.isShowingAutocomplete() && this.isCursorAtInputEnd()) {
+		if (
+			matchesKey(data, "tab") &&
+			!this.isShowingAutocomplete() &&
+			this.isCursorAtInputEnd()
+		) {
 			const message = this.getExpandedText().trim();
 			if (message.length === 0) {
 				super.handleInput(data);
@@ -33,7 +37,10 @@ class TabFollowUpEditor extends CustomEditor {
 			const ctx = this.getContext();
 			this.addToHistory(message);
 			this.setText("");
-			this.sendUserMessage(message, ctx.isIdle() ? undefined : { deliverAs: "followUp" });
+			this.sendUserMessage(
+				message,
+				ctx.isIdle() ? undefined : { deliverAs: "followUp" },
+			);
 			return;
 		}
 
@@ -44,7 +51,10 @@ class TabFollowUpEditor extends CustomEditor {
 		const cursor = this.getCursor();
 		const lines = this.getText().split("\n");
 		const lastLineIndex = lines.length - 1;
-		return cursor.line === lastLineIndex && cursor.col === (lines[lastLineIndex]?.length ?? 0);
+		return (
+			cursor.line === lastLineIndex &&
+			cursor.col === (lines[lastLineIndex]?.length ?? 0)
+		);
 	}
 }
 
@@ -52,7 +62,13 @@ export default function (pi: ExtensionAPI) {
 	pi.on("session_start", (_event, ctx) => {
 		ctx.ui.setEditorComponent(
 			(tui, theme, keybindings) =>
-				new TabFollowUpEditor(tui, theme, keybindings, () => ctx, pi.sendUserMessage.bind(pi)),
+				new TabFollowUpEditor(
+					tui,
+					theme,
+					keybindings,
+					() => ctx,
+					pi.sendUserMessage.bind(pi),
+				),
 		);
 	});
 }
