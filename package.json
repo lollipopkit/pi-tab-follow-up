@@ -1,12 +1,12 @@
 {
-	"name": "pi-extension-tab-follow-up",
+	"name": "pi-tab-follow-up",
 	"private": true,
 	"version": "0.70.6",
 	"type": "module",
 	"scripts": {
 		"clean": "echo 'nothing to clean'",
 		"build": "echo 'nothing to build'",
-		"check": "echo 'nothing to check'"
+		"check": "biome check --error-on-warnings . && tsgo --noEmit -p tsconfig.json"
 	},
 	"pi": {
 		"extensions": [
