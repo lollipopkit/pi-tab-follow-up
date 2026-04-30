@@ -31,3 +31,7 @@ pi install npm:pi-tab-follow-up
 ```
 
 然后在 pi 里执行 `/reload`，或重启 pi。
+
+## 更多插件
+
+- [models-metadata](https://github.com/lollipopkit/pi-models-metadata/blob/main/README.zh.md): 自动同步远端的模型列表+模型的元数据(上下文大小/多模态等等)

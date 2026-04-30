@@ -31,3 +31,7 @@ The built-in follow-up keybinding remains active unless you override it. To make
 ```
 
 Then run `/reload` in pi, or restart pi.
+
+## More Extensions
+
+- [models-metadata](https://github.com/lollipopkit/pi-models-metadata): Automatically sync remote models list and model metadata, including context size and multimodal support.
