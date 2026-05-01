@@ -2,16 +2,12 @@
 	"name": "pi-tab-follow-up",
 	"version": "0.1.0",
 	"type": "module",
+	"license": "OSL-3.0",
 	"files": [
 		"index.ts",
 		"README.md",
 		"README.zh.md"
 	],
-	"scripts": {
-		"clean": "echo 'nothing to clean'",
-		"build": "echo 'nothing to build'",
-		"check": "biome check --error-on-warnings . && tsgo --noEmit -p tsconfig.json"
-	},
 	"pi": {
 		"extensions": [
 			"./index.ts"
@@ -22,9 +18,7 @@
 		"@mariozechner/pi-tui": "*"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.4.12",
-		"@mariozechner/pi-coding-agent": "0.69.0",
-		"@mariozechner/pi-tui": "0.69.0",
-		"@typescript/native-preview": "7.0.0-dev.20260423.1"
+		"@mariozechner/pi-coding-agent": "^0.71.0",
+		"@mariozechner/pi-tui": "0.69.0"
 	}
 }
