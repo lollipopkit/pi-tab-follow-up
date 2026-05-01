@@ -35,3 +35,4 @@ pi install npm:pi-tab-follow-up
 ## 更多插件
 
 - [models-metadata](https://github.com/lollipopkit/pi-models-metadata/blob/main/README.zh.md): 自动同步远端的模型列表+模型的元数据(上下文大小/多模态等等)
+- [ui-finetune](https://github.com/lollipopkit/pi-ui-finetune/blob/main/README.zh.md): 微调UI, 显示更加简洁。

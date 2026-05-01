@@ -35,3 +35,4 @@ Then run `/reload` in pi, or restart pi.
 ## More Extensions
 
 - [models-metadata](https://github.com/lollipopkit/pi-models-metadata): Automatically sync remote models list and model metadata, including context size and multimodal support.
+- [ui-finetune](https://github.com/lollipopkit/pi-ui-finetune/blob/main/README.md): UI fine-tuning, showing a more concise interface.
