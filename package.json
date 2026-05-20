@@ -1,6 +1,6 @@
 {
 	"name": "pi-tab-follow-up",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Pi extension to enable <Tab> folllow up",
 	"type": "module",
 	"license": "OSL-3.0",
