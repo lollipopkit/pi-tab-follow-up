@@ -3,8 +3,8 @@ import {
 	type ExtensionAPI,
 	type ExtensionContext,
 	type KeybindingsManager,
-} from "@mariozechner/pi-coding-agent";
-import { type EditorTheme, matchesKey, type TUI } from "@mariozechner/pi-tui";
+} from "@earendil-works/pi-coding-agent";
+import { type EditorTheme, matchesKey, type TUI } from "@earendil-works/pi-tui";
 
 class TabFollowUpEditor extends CustomEditor {
 	private readonly getContext: () => ExtensionContext;
